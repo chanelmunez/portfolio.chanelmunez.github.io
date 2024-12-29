@@ -16,8 +16,12 @@ export default function Home() {
                 </div>
             </div>
             <div className="social-links">
-                <a href="https://www.linkedin.com/in/cmunezero/" target="_blank"><i className="fab fa-linkedin"/> LinkedIn</a>
-                <a href="https://github.com/chanelmunez" target="_blank"><i className="fab fa-github"/> GitHub</a>
+                <a href="https://www.linkedin.com/in/cmunezero/" target="_blank">
+                    <i className="fab fa-linkedin"/> LinkedIn
+                </a>
+                <a href="https://github.com/chanelmunez" target="_blank">
+                    <i className="fab fa-github"/> GitHub
+                </a>
             </div>
         </header>
 
