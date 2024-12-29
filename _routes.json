@@ -1,4 +1,4 @@
 {
 	"version": 1,
-	"exclude": ["/favicon.ico", "file.svg", "globe.svg",  "next.svg", "vercel.svg", "window.svg"]
+	"exclude": ["/favicon.ico", "/file.svg", "/globe.svg",  "/next.svg", "/vercel.svg", "/window.svg"]
 }
