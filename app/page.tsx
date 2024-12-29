@@ -1,8 +1,8 @@
 export const runtime = "edge";
 
 import Image from "next/image";
-import Header from "./components/header";
-import Modals from "./components/modals";
+//import Header from "./components/header";
+//import Modals from "./components/modals";
 
 export default function Home() {
   return (

@@ -104,6 +104,9 @@ dist
 .temp
 .cache
 
+# vercel build output
+.vercel
+
 # Docusaurus cache and generated files
 .docusaurus
 
