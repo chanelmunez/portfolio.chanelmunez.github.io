@@ -1,3 +1,5 @@
+console.log('alskdfj');
+
 document.addEventListener('DOMContentLoaded', () => {
     // Create overlay element
     const overlay = document.createElement('div');
