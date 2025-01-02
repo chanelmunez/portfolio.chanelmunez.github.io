@@ -68,6 +68,13 @@ header {
 .social-links a:hover {
     opacity: 0.8;
 }
+/*
+.social-links i {
+    width: 20px;
+    height: 20px;
+    background-image: url();
+}
+*/
 
 main {
     margin-top: 30px;

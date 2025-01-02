@@ -1,12 +1,14 @@
 export const runtime = "edge";
 
+import Head from 'next/head'
 import Image from "next/image";
-//import Header from "./components/header";
-//import Modals from "./components/modals";
+import Script from "next/script";
 
 export default function Home() {
   return (
     <>
+        <Head>
+        </Head>
         <header>
             <div className="profile-section">
                 <img src="./images/profile-header.jpeg" alt="Profile Picture" className="profile-image" />
@@ -262,10 +264,11 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-        <script src="script.js"></script>
-
-
+        
         </main>
+
+            <Script href="whodoneit.js" />
+        <script src="script.js"></script>
     </>
   );
 };

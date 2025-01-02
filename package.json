@@ -3,7 +3,6 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
-
     "vercel-build": "next build",
     "lint": "next lint",
     "dev": "next dev",
@@ -18,6 +17,7 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.7",
-    "eslint-plugin-next-on-pages": "^1.13.7"
+    "eslint-plugin-next-on-pages": "^1.13.7",
+    "wrangler": "^3.99.0"
   }
 }

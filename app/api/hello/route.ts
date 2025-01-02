@@ -1,9 +1,11 @@
-// import { getRequestContext } from '@cloudflare/next-on-pages'
+import { getRequestContext } from '@cloudflare/next-on-pages'
 
 export const runtime = 'edge'
 
+/*
 export async function GET() {
-  const responseText = 'Hello World'
+  //const responseText = 'get sadlkjf '
+  const responseText = {'hey':'you guys'} 
 
   // In the edge runtime you can use Bindings that are available in your application
   // (for more details see:
@@ -19,3 +21,13 @@ export async function GET() {
 
   return new Response(responseText)
 }
+*/
+
+//export default function onRequest({ res }) {
+export default function onRequest() {
+  const data = { message: "asklfdskjfslfj" };
+  //res.status(200).json(data);
+  return new Response("stuff!")
+}
+
+
