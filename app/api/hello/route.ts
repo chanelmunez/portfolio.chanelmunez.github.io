@@ -1,6 +1,6 @@
 import { getRequestContext } from '@cloudflare/next-on-pages'
 
-export const runtime = 'edge'
+//export const runtime = 'edge'
 
 //export default function onRequest({ res }) {
 export default function onRequest() {

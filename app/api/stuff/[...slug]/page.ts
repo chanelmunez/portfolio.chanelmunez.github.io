@@ -1,9 +1,22 @@
 
-export default function Crap(req, res) {
-  const data = { message: "page rap from Next.js API!" }
-  console.log('res', res)
-  console.log('req', req)
-  //res.status(200).json(data)
+type Props = {
+  params: {
+    slug: string[]
+  }
+  searchParams: {
+    [key: string]: string | string[] | undefined
+  }
+}
+
+export default async function Crap({ params, searchParams }: Props) {
+  const data = { message: "page crap from Next.js API!" }
+  params = await params
+  searchParams = await searchParams
+  delete searchParams.slug
+  console.log('slug page')
+  console.log('params', params)
+  console.log('query', searchParams)
+
   return Response.json(data)
 }
 

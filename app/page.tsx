@@ -7,8 +7,6 @@ import Script from "next/script";
 export default function Home() {
   return (
     <>
-        <Head>
-        </Head>
         <header>
             <div className="profile-section">
                 <img src="./images/profile-header.jpeg" alt="Profile Picture" className="profile-image" />
@@ -106,7 +104,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-1">
                 <div className="hover-header">
                     <h2>Motion Industries</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -123,7 +121,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-2">
                 <div className="hover-header">
                     <h2>GetBenjamin</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -139,7 +137,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-3">
                 <div className="hover-header">
                     <h2>ProDataMG</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -158,7 +156,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-4">
                 <div className="hover-header">
                     <h2>Grand Rapids AutoGroup</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -177,7 +175,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-5">
                 <div className="hover-header">
                     <h2>CleverTech</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -196,7 +194,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-6">
                 <div className="hover-header">
                     <h2>SambaTV</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -214,7 +212,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-7">
                 <div className="hover-header">
                     <h2>Soccer Data Analyst</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -229,7 +227,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-8">
                 <div className="hover-header">
                     <h2>AddThis</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -248,7 +246,7 @@ export default function Home() {
             <div className="hover-box" id="hover-box-9">
                 <div className="hover-header">
                     <h2>Grooveshark</h2>
-                    <button className="close-btn"><i className="fas fa-times"></i></button>
+                    <button className="close-btn"><i className="fas fa-times">X</i></button>
                 </div>
                 <div className="hover-content">
                     <div className="image-grid">
@@ -267,8 +265,8 @@ export default function Home() {
         
         </main>
 
-            <Script href="whodoneit.js" />
-        <script src="script.js"></script>
+        <script src="whodoneit.js" />
+        <script src="script.js" />
     </>
   );
 };

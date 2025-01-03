@@ -7,7 +7,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5;
+    /*background-color: #f5f5f5;*/
+    background-color: #000;
     padding: 20px;
 }
 
@@ -21,6 +22,9 @@ header {
     background-color: black;
     padding: 20px;
     border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,6 +95,9 @@ main {
 .portfolio-item {
     background: black;
     border-radius: 10px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 5px;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -138,7 +145,7 @@ main {
 }
 
 .hover-header {
-    background: black;
+    background: grey;
     padding: 20px;
     display: flex;
     justify-content: space-between;
