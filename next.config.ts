@@ -12,10 +12,18 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
+  experimental: {
+  },
+  reactStrictMode: true,
+  swcMinify: true,
 };
 
 module.exports = {
   transpilePackages: ['@acme/ui', 'lodash-es'],
+  eslint: {
+    ignoreDuringBuilds: true
+  },
 }
 
 export default nextConfig;
+
