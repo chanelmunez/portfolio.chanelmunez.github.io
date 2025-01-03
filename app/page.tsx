@@ -265,7 +265,6 @@ export default function Home() {
         
         </main>
 
-        <script src="whodoneit.js" />
         <script src="script.js" />
     </>
   );

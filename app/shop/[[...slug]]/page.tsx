@@ -1,17 +1,8 @@
 import React from 'react'
-import { notFound } from 'next/navigation'
+import { useParams, useSearchParams } from 'next/navigation'
 
 // Enable dynamic paths
 export const dynamicParams = true
-
-type Props = {
-  params: {
-    slug: string[]
-  }
-  searchParams: {
-    [key: string]: string | string[] | undefined
-  }
-}
 
 async function getShopData() {
   const res = await fetch('http://localhost:3000/api/shop', {
@@ -25,26 +16,34 @@ async function getShopData() {
   return res.json()
 }
 
+type Props = {
+  params: Promise<{ [key: string]: string | string[] | undefined }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
 
 export default async function Page({ params, searchParams }: Props) {
-    params = await params
-    searchParams = await searchParams
-    delete searchParams.slug
+    await params
+    await searchParams
     console.log('slug page')
     console.log('params', params)
     console.log('query', searchParams)
+
     const query = Object.entries(searchParams).map(([key, value]) => `${key}=${value}`).join('&')
-    
-    // Since we're in a Server Component, we should use the params prop directly
-    // rather than useParams which is for client components
-    const slugPath = params.slug || []
+    let slugPath: string[] = [];
+    if ('slug' in searchParams) {
+        if (Array.isArray(searchParams.slug)) {
+            slugPath = searchParams.slug.map(String);
+        } else if (searchParams.slug) {
+            slugPath = [String(searchParams.slug)];
+        }
+    }
     console.log('slugs', slugPath)
 
 
   const shopData: any = await getShopData()
 
   return (
-    <div className="p-4">
+    <div className="p-4 shop">
       <p>Path: {slugPath.join('/')}</p>
       <p>Query: {query}</p>
 

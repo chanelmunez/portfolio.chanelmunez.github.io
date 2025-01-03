@@ -14,4 +14,8 @@ const nextConfig: NextConfig = {
   /* config options here */
 };
 
+module.exports = {
+  transpilePackages: ['@acme/ui', 'lodash-es'],
+}
+
 export default nextConfig;
