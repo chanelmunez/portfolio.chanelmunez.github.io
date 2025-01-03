@@ -26,5 +26,5 @@
     ]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules", "app/api"]
+  "exclude": ["node_modules", "app/.shop/",	"app/api/.shop/", "app/api/.stuff/", "app/api/stuff"]
 }

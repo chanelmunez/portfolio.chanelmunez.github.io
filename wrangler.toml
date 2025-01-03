@@ -6,7 +6,7 @@ pages_build_output_dir = ".vercel/output/static"
 
 # Main entry point for your Cloudflare Pages function
 #main = ".worker-next/index.mjs"
-main = "app/index.mjs"
+#main = "app/index.mjs"
 
 #[[assets]]
 #directory = ".worker-next/static"
