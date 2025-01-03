@@ -16,28 +16,28 @@ async function getShopData() {
   return res.json()
 }
 
+type SearchParams = { [key: string]: string | string[] | undefined }
 type Props = {
-  params: Promise<{ [key: string]: string | string[] | undefined }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+  params: Promise<{ slug?: string[] }>
+  searchParams: Promise<SearchParams>
 }
 
-export default async function Page({ params, searchParams }: Props) {
-    await params
-    await searchParams
-    console.log('slug page')
-    console.log('params', params)
-    console.log('query', searchParams)
+export default async function ShopPage({ params, searchParams }: Props) {
+  await params
+  await searchParams
+  console.log('params', params)
+  console.log('searchParams', searchParams)
 
-    const query = Object.entries(searchParams).map(([key, value]) => `${key}=${value}`).join('&')
-    let slugPath: string[] = [];
-    if ('slug' in searchParams) {
-        if (Array.isArray(searchParams.slug)) {
-            slugPath = searchParams.slug.map(String);
-        } else if (searchParams.slug) {
-            slugPath = [String(searchParams.slug)];
-        }
-    }
-    console.log('slugs', slugPath)
+  const query = Object.entries(searchParams).map(([key, value]) => `${key}=${value}`).join('&')
+  let slugPath: string[] = [];
+  if ('slug' in searchParams) {
+      if (Array.isArray(searchParams.slug)) {
+          slugPath = searchParams.slug.map(String);
+      } else if (searchParams.slug) {
+          slugPath = [String(searchParams.slug)];
+      }
+  }
+  console.log('slugs', slugPath)
 
 
   const shopData: any = await getShopData()
