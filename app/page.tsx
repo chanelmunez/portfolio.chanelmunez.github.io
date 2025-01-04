@@ -181,7 +181,6 @@ export default function Home() {
                     <div className="image-grid">
                         <img src="./images/clevertech-live.png" alt="CleverTech Live" />
                         <img src="./images/clevertech-movement.png" alt="CleverTech Movement" />
-                        <img src="./images/clevertech-features.png" alt="CleverTech Features" />
                         <img src="./images/clevertech-screens.png" alt="CleverTech Screens" />
                     </div>
                     <ul className="project-details">
