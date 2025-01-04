@@ -5,12 +5,11 @@ compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
 # Main entry point for your Cloudflare Pages function
-#main = ".worker-next/index.mjs"
-#main = "app/index.mjs"
+# main = ".worker-next/index.mjs"
 
-#[[assets]]
-#directory = ".worker-next/static"
-#binding = "ASSET"
+# [[assets]]
+# directory = ".worker-next/static"
+# binding = "ASSET"
 
 # Automatically place your workloads in an optimal location to minimize latency.
 # If you are running back-end logic in a Pages Function, running it closer to your back-end infrastructure
