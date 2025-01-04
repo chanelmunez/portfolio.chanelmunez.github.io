@@ -1,4 +1,3 @@
-console.log('alskdfj');
 
 document.addEventListener('DOMContentLoaded', () => {
     // Create overlay element
