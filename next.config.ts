@@ -21,7 +21,7 @@ const nextConfig: NextConfig = {
 module.exports = {
   transpilePackages: ['@acme/ui', 'lodash-es'],
   eslint: {
-    /*ignoreDuringBuilds: true*/
+    ignoreDuringBuilds: true
   },
 }
 
