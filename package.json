@@ -3,14 +3,18 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
     "deploy": "npm run pages:build && wrangler pages deploy",
+
     "lint": "next lint",
     "dev": "next dev",
     "start": "next start",
     "build": "next build",
+
     "build:worker": "wrangler pages build",
     "dev:worker": "wrangler dev --port 3001",
     "preview:worker": "npm run build && npm run dev:worker",
-    "deploy:worker": "wrangler pages deploy"
+    "deploy:worker": "wrangler pages deploy",
+
+    "export": "next export"
   },
   "dependencies": {
     "cloudflare": "^3.5.0",
