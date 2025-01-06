@@ -13,6 +13,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* config options here */
   output: 'export',
+  trailingSlash: true, // add trailing slash to produce index.html file
   experimental: {
   },
   reactStrictMode: true,
