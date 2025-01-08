@@ -2,7 +2,8 @@
 name = "portfolio-chanelmunez-github-io"
 compatibility_date = "2024-12-24"
 compatibility_flags = ["nodejs_compat_v2"]
-pages_build_output_dir = ".vercel/output/static/"
+#pages_build_output_dir = ".vercel/output/static/"
+pages_build_output_dir = "build"
 
 # Main entry point for your Cloudflare Pages function
 # main = ".worker-next/index.mjs"

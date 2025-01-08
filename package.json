@@ -14,7 +14,8 @@
     "preview:worker": "npm run build && npm run dev:worker",
     "deploy:worker": "wrangler pages deploy",
 
-    "export": "next export"
+    "_comment": "export: next export"
+    
   },
   "dependencies": {
     "cloudflare": "^3.5.0",
