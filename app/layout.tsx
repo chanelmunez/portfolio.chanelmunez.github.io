@@ -2,6 +2,8 @@ export const runtime = "edge";
 
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Head from 'next/head';
+import Script from 'next/script';
 //import "./css/all.min.css";
 import "./css/all.css";
 import "./globals.css";
@@ -29,10 +31,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-72WE5XWZBC"
+          strategy="beforeInteractive"
+        />
+        <Script 
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+          __html: `
+            document.getElementById('banner').classList.remove('hidden');
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-72WE5XWZBC');
+          `
+       }} />
+      </Head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+
+
       </body>
     </html>
   );

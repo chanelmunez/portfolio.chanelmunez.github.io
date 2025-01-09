@@ -1,9 +1,21 @@
 
+// Google Analytics (gtag)
+window.dataLayer = window.dataLayer || [];
+window.gtag = function(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-72WE5XWZBC');
+
 document.addEventListener('DOMContentLoaded', () => {
     // Create overlay element
     const overlay = document.createElement('div');
     overlay.className = 'overlay';
     document.body.appendChild(overlay);
+    document.addEventListener('click', (e) => {
+        const activeHoverBox = document.querySelector('.hover-box.active');
+        console.log('document click');
+        window.gtag('click', 'document');
+    });
+
 
     // Function to close active hover box
     const closeActiveHoverBox = (e) => {
@@ -11,6 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (activeHoverBox && (e.key === 'Escape' || e.type === 'click')) {
             activeHoverBox.classList.remove('active');
             overlay.style.display = 'none';
+            const itemId = activeHoverBox.getAttribute('data-item');
+            console.log('hoverBoxClose click');
+            window.gtag('click', 'hoverBoxClose', itemId);
         }
     };
 
@@ -24,6 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (hoverBox) {
                 hoverBox.classList.add('active');
                 overlay.style.display = 'block';
+                console.log('portfolio click');
+                window.gtag('click', 'portfolioItem', itemId);
             }
         });
     });
@@ -51,5 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Add keypress event handler to close hover box
     document.addEventListener('keydown', (e) => {
         closeActiveHoverBox(e);
+        console.log('keydown');
     });
 });

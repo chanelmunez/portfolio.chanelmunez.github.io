@@ -101,7 +101,7 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="hover-box" id="hover-box-1">
+            <div className="hover-box" id="hover-box-1" data-item="1">
                 <div className="hover-header">
                     <h2>Motion Industries</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -118,7 +118,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="hover-box" id="hover-box-2">
+            <div className="hover-box" id="hover-box-2" data-item="2">
                 <div className="hover-header">
                     <h2>GetBenjamin</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -134,7 +134,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="hover-box" id="hover-box-3">
+            <div className="hover-box" id="hover-box-3" data-item="3">
                 <div className="hover-header">
                     <h2>ProDataMG</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -153,7 +153,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="hover-box" id="hover-box-4">
+            <div className="hover-box" id="hover-box-4" data-item="4">
                 <div className="hover-header">
                     <h2>Grand Rapids AutoGroup</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -172,7 +172,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="hover-box" id="hover-box-5">
+            <div className="hover-box" id="hover-box-5" data-item="5">
                 <div className="hover-header">
                     <h2>CleverTech</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -190,7 +190,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="hover-box" id="hover-box-6">
+            <div className="hover-box" id="hover-box-6" data-item="6">
                 <div className="hover-header">
                     <h2>SambaTV</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -208,7 +208,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="hover-box" id="hover-box-7">
+            <div className="hover-box" id="hover-box-7" data-item="7">
                 <div className="hover-header">
                     <h2>Soccer Data Analyst</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -223,7 +223,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
-            <div className="hover-box" id="hover-box-8">
+            <div className="hover-box" id="hover-box-8" data-item="8">
                 <div className="hover-header">
                     <h2>AddThis</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
@@ -242,7 +242,7 @@ export default function Home() {
                     </ul>
                 </div>
             </div> 
-            <div className="hover-box" id="hover-box-9">
+            <div className="hover-box" id="hover-box-9" data-item="9">
                 <div className="hover-header">
                     <h2>Grooveshark</h2>
                     <button className="close-btn"><i className="fas fa-times"></i></button>
